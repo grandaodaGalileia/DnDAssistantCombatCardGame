@@ -1,0 +1,125 @@
+/* ===== CreateCharacterPage.css ===== */
+
+.create-character-page {
+  min-height: 100vh;
+  background-image: url("..\assets\roleselect_img.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 2rem;
+  font-family: "Uncial Antiqua", "Georgia", serif;
+  color: white;
+  overflow-y: auto;
+}
+
+.create-character-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+.create-character-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 16px;
+  color: #2d1b0d;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.create-character-content h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #550000;
+  margin-bottom: 1.5rem;
+}
+
+.create-character-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.create-character-form input,
+.create-character-form select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #999;
+  font-size: 1rem;
+  font-family: "Georgia", serif;
+}
+
+.create-character-form select[multiple] {
+  height: 150px;
+}
+
+.create-character-form fieldset {
+  border: 2px solid #550000;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.create-character-form legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #550000;
+}
+
+.create-character-form label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.create-character-form button {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.create-character-form button:hover {
+  background-color: #a10000;
+}
+
+.back-button {
+  display: block;
+  margin: 2rem auto 0;
+  background-color: transparent;
+  border: 2px solid #8b0000;
+  color: #8b0000;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-button:hover {
+  background-color: #8b0000;
+  color: white;
+}
+
+.create-character-form label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #550000;
+}
+
+.create-character-form div {
+  display: flex;
+  flex-direction: column;
+}

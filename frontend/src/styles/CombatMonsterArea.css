@@ -1,0 +1,66 @@
+.attacks-section {
+  justify-items: center;
+}
+
+.monster-buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.monster-buttons button {
+  background: radial-gradient(ellipse at top,#c0142b, #000);
+  color: white;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-family: "Cinzel", serif;
+  font-size: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.monster-buttons button:hover {
+  background: #682ca7;
+}
+
+.monster-stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.attacks-header {
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.attacks-header h3 {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.back-button {
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  margin: 0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #9ca3af;
+}
+
+.attacks-row {
+  flex-direction: row;
+}

@@ -1,0 +1,110 @@
+.player-bar-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  left: 30%;
+  padding: 10px 0;
+}
+
+.player-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  gap: 0px;
+
+  background: rgba(59, 55, 61, 0.708);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.player-cards-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.cards-tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cards-tab-buttons button {
+  font-family: "Cinzel", serif;
+  padding: 4px 10px;
+  background-color: #1f1f1f;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.cards-tab-buttons button.active {
+  background-color: #9f1d1d;
+  border-color: #c33;
+}
+
+.cards-tab-buttons button:hover {
+  background-color: #333;
+}
+
+.character-info {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  justify-content: center;
+  align-self: flex-end;
+  min-width: 150px;
+  max-width: 150px;
+  margin-left: 0;
+  margin-right: 0;
+  color: #fff;
+}
+
+.spells-section-wrapper,
+.weapons-section-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.character-image-wrapper {
+  border: 4px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.character-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.character-name {
+  font-family: "Cinzel", serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.character-stats {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}

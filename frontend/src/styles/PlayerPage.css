@@ -1,0 +1,93 @@
+.player-page {
+  min-height: 100vh;
+  background-image: url("../assets/roleselect_img.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: "Uncial Antiqua", "Georgia", serif;
+}
+
+.player-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.player-page-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.player-page h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.player-page p {
+  font-size: 1.25rem;
+}
+
+.player-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.player-button {
+  padding: 2rem;
+  font-size: 1.25rem;
+  font-family: "Georgia", serif;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  width: 250px;
+  position: relative;
+  border: 2px solid #8b0000;
+  transition: transform 0.3s ease;
+}
+
+.player-button.join-room {
+  background-image: url("../assets/enterroomplayer_img.jfif");
+  background-size: cover;
+  background-position: center;
+}
+
+.player-button.join-room::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1px);
+  z-index: 0;
+}
+
+.player-button.create-characters {
+  background-image: url("../assets/createcharacter_img.jfif");
+  background-size: cover;
+  background-position: center;
+}
+
+.player-button.create-characters::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1px);
+  z-index: 0;
+}
+
+.player-button:hover {
+  transform: scale(1.03);
+}
+
+.player-button > * {
+  position: relative;
+  z-index: 1;
+}

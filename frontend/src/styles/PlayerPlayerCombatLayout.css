@@ -1,0 +1,80 @@
+.pplayer-combat-layout {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* evita bloquear cliques */
+}
+
+.pplayer-side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  pointer-events: all;
+}
+
+.pplayer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pplayer-card {
+  font-family: "Cinzel", serif;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 12px;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70px;
+  height: 90px;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pplayer-card h3,
+.pplayer-card p,
+.pplayer-card img {
+  transition: all 0.3s ease;
+}
+
+/* Texto padrão */
+.pplayer-card h3 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.pplayer-card p {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Imagem padrão */
+.pplayer-card img {
+  width: 45px;
+  height: 45px;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.pplayer-name {
+  font-family: "Cinzel", serif;
+  color: #000000;
+  font-size: 0.7rem;
+  font-weight: 1000;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  max-width: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

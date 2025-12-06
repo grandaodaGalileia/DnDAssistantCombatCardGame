@@ -1,0 +1,125 @@
+.mmonster-combat-layout {
+  position: absolute;
+  top: 140px; /* abaixo dos cards dos jogadores */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.mmonster-side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  pointer-events: all;
+}
+
+.mmonster-card {
+  font-family: "Cinzel", serif;
+  background: #222;
+  color: white;
+  border-radius: 12px;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70px;
+  height: 90px;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.mmonster-card h3,
+.mmonster-card p,
+.mmonster-card img {
+  transition: all 0.3s ease;
+}
+
+/* Texto padrão */
+.mmonster-card h3 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.mmonster-card p {
+  font-size: 10px;
+  margin: 0;
+}
+
+/* Imagem padrão */
+.mmonster-card img {
+  width: 45px;
+  height: 45px;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.mmonster-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mmonster-name {
+  font-family: "Cinzel", serif;
+  color: #000000;
+  font-size: 0.6rem;
+  font-weight: 1000;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  max-width: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mmonster-wrapper {
+  transition: all 0.3s ease;
+}
+
+.mmonster-wrapper.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.mmonster-card.expanded img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.mmonster-card.expanded {
+  width: 190px;
+  height: 260px;
+  font-size: 3.2em;
+  margin-bottom: 100%;
+}
+
+.center-card-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 3.2em;
+  transform: translate(-50%, -50%);
+  z-index: 9000;
+}
+
+/* Glow vermelho */
+.mmonster-card.glow {
+  box-shadow: 0 0 15px 5px red;
+  border: 2px solid #ff0000;
+}
+
+/* Para o card expandido ter glow mais intenso */
+.mmonster-card.expanded.glow {
+  box-shadow: 0 0 25px 10px red;
+}
+

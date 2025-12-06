@@ -1,0 +1,61 @@
+.role-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/roleselect_img.jpg"); /* Caminho para a imagem na pasta public */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.role-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7); /* escurece o fundo */
+  backdrop-filter: blur(6px); /* aplica o blur */
+  z-index: 0;
+}
+
+.role-title {
+  z-index: 1;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-family: "Uncial Antiqua", "Georgia", serif;
+  text-align: center;
+}
+
+.role-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2%;
+  z-index: 1;
+}
+
+.role-button {
+  width: 30%;
+  height: 450px; /* Mais esticado verticalmente */
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(100, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.role-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+  background-color: rgba(150, 0, 0, 0.8);
+}

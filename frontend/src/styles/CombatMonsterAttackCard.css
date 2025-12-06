@@ -1,0 +1,68 @@
+.attack-card {
+  background-image: url("../assets/redTexBG.png");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid rgba(48, 29, 29, 0.775);
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 0rem;
+  border-radius: 8px;
+  width: 120px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s ease-in-out; /* <== adicionado */
+  cursor: pointer; /* <== para indicar interatividade */
+}
+
+.attack-card:hover {
+  transform: scale(1.05); /* <== aumenta levemente no hover */
+}
+
+.attack-description.collapsed span {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3; /* número de linhas visíveis */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.attack-description.expanded span {
+  display: block;
+  overflow: visible;
+}
+
+.button-container{
+  height: auto;
+  margin-top: auto;
+  align-items: center;
+}
+
+.read-more-btn {
+  align-self: flex-end;
+  margin-top: auto;
+  background: none;
+  border: none;
+  color: #0066cc;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0;
+}
+
+.attack-card h4 {
+  color: rgb(222, 54, 43);
+  font-size: 15px;
+  margin: 0;
+}
+
+.attack-card p strong {
+  font-size: 13px;
+}
+
+.attack-card p {
+  font-size: 12px;
+  margin-bottom: 1px;
+}

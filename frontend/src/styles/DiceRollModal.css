@@ -1,0 +1,113 @@
+/* styles/DiceRollModal.css */
+.dice-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.dice-modal {
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dice {
+  font-size: 5rem;
+  margin: 1rem 0;
+  transition: transform 1.5s ease-in-out;
+}
+
+.rolling {
+  animation: roll 1.5s ease-in-out;
+}
+
+.roll-button,
+.close-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.result-text {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.monster-result {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.monster-result .total {
+  font-weight: bold;
+  color: #1d8a6e;
+}
+
+.dice-box-canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999 !important;
+  pointer-events: none; /* Impede que o canvas capture cliques */
+}
+
+.attack-feedback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 8px;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.attack-feedback.success {
+  color: green;
+}
+.attack-feedback.failure {
+  color: red;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

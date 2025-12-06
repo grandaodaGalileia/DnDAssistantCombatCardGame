@@ -1,0 +1,66 @@
+.monster-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.monster-modal-content {
+  position: relative;
+  max-width: 600px;
+  padding: 2rem;
+
+  background-color: rgba(255, 255, 255, 0.95);
+  font-family: "Georgia", serif;
+
+  color: #2d1b0d;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.monster-modal-content h2 {
+  font-size: 2rem;
+  font-family: "Uncial Antiqua", "Georgia", serif;
+  color: #550000;
+  border-bottom: 2px solid #550000;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.monster-modal-body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.monster-modal-body p {
+  margin: 0.5rem 0;
+}
+
+.monster-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  font-size: 2rem;
+  color: #550000;
+
+  border: none;
+  cursor: pointer;
+
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.monster-modal-close:hover {
+  transform: rotate(30deg) scale(1.1);
+  color: #a10000;
+}

@@ -1,0 +1,145 @@
+.player-combat-page {
+  position: relative;
+  height: 100vh;
+  background-image: url("../assets/lava_arena.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.grid-combat-player{
+  position: absolute;
+  margin-bottom: 7%;
+}
+
+.initiative-order-banner {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: #1e1e1e;
+  padding: 4px 7px;
+  border-radius: 60px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.initiative-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.initiative-item {
+  background-color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.initiative-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(20, 20, 20, 0.9);
+  color: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 20;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.initiative-banner h2 {
+  font-family: "Cinzel", serif;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.initiative-banner button {
+  margin-top: 1rem;
+  background-color: #007bff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.initiative-banner button:hover {
+  background-color: #0056b3;
+}
+
+.turn-notice {
+  position: fixed;
+  bottom: 2%;
+  left: 10%;
+  transform: translateX(-50%);
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
+.turn-notice button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #29a329;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.turn-info {
+  font-family: "Cinzel", serif;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.player-drop-zone {
+  position: fixed;
+  bottom: 5%;
+  right: 4%;
+  width: 160px;
+  height: 220px;
+  background-color: #6a6a6a2e;
+  transition: background 0.3s ease;
+  border: 2px dashed #888;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 140px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  font-family: "Cinzel", serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.player-drop-zone:hover {
+  border: 2px dashed #ff0000;
+  background-color: rgba(255, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+

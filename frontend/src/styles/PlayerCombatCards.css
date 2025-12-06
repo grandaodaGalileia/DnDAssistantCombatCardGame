@@ -1,0 +1,129 @@
+.combat-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-shrink: 0;
+  max-width: 450px;
+  border-radius: 15px;
+  padding-top: 5px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.spells-section{
+  width: 390px;
+}
+
+
+.spells-section h3 {
+  font-family: "Cinzel", serif;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.weapons-section h3 {
+  font-family: "Cinzel", serif;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.spells-list,
+.weapons-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 10px;
+}
+
+
+.spell-card,
+.weapon-card {
+  background: radial-gradient(ellipse at top,#30435d, #000);
+  box-shadow: 0 0 5px #0f0f0f;
+  font-family: "Cinzel", serif;
+  flex: 0 0 105px;
+  height: 125px;
+  border-radius: 6px;
+  padding: 5px;
+  color: #fff;
+  font-size: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.spell-card:hover{
+  transform: scale(1.03);
+}
+
+.spell-card h4 {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.spell-card p {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 10px;
+}
+
+.weapon-card h4 {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.weapon-card p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.spell-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.spell-buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 4px;
+}
+
+.weapon-buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.spell-buttons button {
+  background: radial-gradient(ellipse at top,#c0142b, #000);
+  color: white;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 0px 0.6em;
+  font-family: "Cinzel", serif;
+  font-size: 0.5rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+.spell-buttons button:hover {
+  background: #e62727;
+}

@@ -1,0 +1,27 @@
+.monster-sheet {
+  margin-top: 3rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 900px;
+  width: 100%;
+  color: #2d1b0d;
+  font-family: "Georgia", serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.monster-sheet h2,
+.monster-sheet h3 {
+  font-family: "Uncial Antiqua", "Georgia", serif;
+  color: #550000;
+}
+
+.monster-sheet p,
+.monster-sheet ul {
+  margin: 0.5rem 0;
+}
+
+.monster-sheet ul {
+  list-style: square inside;
+  padding-left: 1rem;
+}

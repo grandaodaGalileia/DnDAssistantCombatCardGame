@@ -1,0 +1,52 @@
+.combat-grid {
+  display: grid;
+  grid-template-columns: repeat(25, 50px);
+  grid-template-rows: repeat(15, 50px);
+  position: relative; /* necessário para posicionar tokens */
+  background-image: url("../assets/caveraGrid.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.grid-token-absolute {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.grid-cell {
+  background-color: #44444400;
+  border: 1px solid #666;
+  position: relative;
+}
+
+.grid-token {
+  width: 94%;
+  height: 94%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.grid-wrapper {
+  overflow: auto;
+  position: relative;
+  width: 700px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.combat-grid {
+  transition: transform 0.1s ease;
+}
+
+.grid-wrapper:active {
+  cursor: grabbing;
+}
