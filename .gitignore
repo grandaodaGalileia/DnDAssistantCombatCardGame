@@ -1,0 +1,23 @@
+# Node
+node_modules/
+dist/
+
+# Build
+build/
+out/
+
+# Firebase / Google
+backend/firebase-service-account.json
+
+# Logs
+*.log
+logs/
+
+# VSCode
+.vscode/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
